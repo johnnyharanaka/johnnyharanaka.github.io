@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+.menu {
+  background-color: #102c57;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 42px;
+}
+
+.flexmenu {
+  position: relative;
+  padding-right: 100px;
+  color: #102c57;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.flexmenu li a {
+  color: #f8f0e5;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+.home {
+  background-image: url("Home.jpg");
+  background-size: 100%;
+  height: 100vh;
+}
+#home-text {
+  position: absolute;
+  background-color: rgba(160, 160, 160, 0.9);
+  margin: 0px;
+  padding: 50px;
+  padding-bottom: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f0e5;
+}
+#home-text h1 {
+  margin: inherit;
+  font-family: "Playfair Display SC", serif;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 90px;
+}
+#home-text h2 {
+  margin: inherit;
+  font-family: "Playfair", serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: right;
+  color: #2c4e80;
+}
+
+.page2 {
+  background-color: #f8f0e5;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.page2::before {
+  content: "About";
+  background-color: #d8d8d8;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display SC", serif;
+  font-size: 36px;
+  padding: 20px 25px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.page2 h1 {
+  padding-top: 100px;
+  font-size: 40px;
+  font-family: "Playfair", serif;
+}
+.page2 h1::after {
+  width: 125px;
+  content: "";
+  border: 3px solid #102c57;
+  display: block;
+  margin-top: 5px;
+}
+
+.page2 h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+.page3 {
+  position: relative;
+  padding: 0 100px 78px 100px;
+}
+.page3::before {
+  content: "Projects";
+  background-color: #d8d8d8;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display SC", serif;
+  font-size: 36px;
+  padding: 20px 25px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.projetoFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.projetoFlex hr {
+  width: 250px;
+  content: "";
+  border: 3px solid #d8d8d8;
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+}
+.projetoFlex hr:first-child {
+  margin-top: 80px;
+}
+
+.projetoItem {
+  background-color: #d8d8d8;
+  display: flex;
+  padding: 30px 100px 30px 100px;
+}
+
+.escrita {
+  width: 70%;
+  padding-right: 100px;
+}
+
+.escrita h2 {
+  font-size: 32px;
+  font-family: "Playfair", serif;
+  font-weight: normal;
+}
+
+.escrita h2::after {
+  width: 75px;
+  content: "";
+  border: 2px solid #102c57;
+  display: block;
+  margin-top: 5px;
+}
+
+.escrita p {
+  margin-top: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.descricao {
+  width: 30%;
+}
+
+.descricao h2 {
+  font-family: "Playfair", serif;
+  font-size: 32px;
+  font-weight: normal;
+  text-align: center;
+}
+.descricao ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 38px 20px 20px 20px;
+  gap: 5px;
+}
+
+.descricao ul li {
+  background-color: white;
+  padding: 3px 6px 3px 6px;
+  font-size: 10px;
+  min-width: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  border-radius: 3px;
+}
+
+.page4 {
+  background-color: #555555;
+}
+
+.page4::before {
+  content: "Contact";
+  background-color: #d8d8d8;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display SC", serif;
+  font-size: 36px;
+  padding: 20px 25px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.page4 li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 10px;
+  background-color: #dac0a3;
+  margin-right: 4px;
+}
+
+.containerContato {
+  padding: 50px 220px 14px 100px;
+  background-color: #555555;
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+#contatoLinks {
+  margin-right: auto;
+}
+
+#contatoLinks h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+#contatoLinks ul {
+  margin-top: 12px;
+}
+
+#descricaoContato {
+  align-self: flex-end;
+}
