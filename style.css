@@ -10,6 +10,10 @@ body {
   font-family: Slabo;
   src: url(Fonts/Slabo27px-Regular.ttf);
 }
+
+.rotate-screen {
+  display: none;
+}
 .card {
   background-color: #1f1f1f;
   position: absolute;
