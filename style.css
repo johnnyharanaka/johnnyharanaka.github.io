@@ -23,42 +23,23 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   overflow-x: hidden;
+  box-shadow: 0 -6px 2px hsl(var(--hue), 100%, 60%),
+    5px -4px 2px hsl(calc(var(--hue) + 30), 100%, 60%),
+    6px 1px 2px hsl(calc(var(--hue) + 60), 100%, 60%),
+    4px 5px 2px hsl(calc(var(--hue) + 90), 100%, 60%),
+    0 6px 2px hsl(calc(var(--hue) + 120), 100%, 60%),
+    -4px 5px 2px hsl(calc(var(--hue) + 150), 100%, 60%),
+    -6px 1px 2px hsl(calc(var(--hue) + 180), 100%, 60%),
+    -5px -4px 2px hsl(calc(var(--hue) + 210), 100%, 60%),
+    0 -6px 2px hsl(calc(var(--hue) + 240), 100%, 60%),
+    5px -4px 2px hsl(calc(var(--hue) + 270), 100%, 60%),
+    6px 1px 2px hsl(calc(var(--hue) + 300), 100%, 60%),
+    4px 5px 2px hsl(calc(var(--hue) + 330), 100%, 60%);
 }
 
 .neon {
   color: hsl(var(--hue), 100%, 50%);
-  box-shadow: 0 -6px 1px hsl(var(--hue), 100%, 60%),
-    1px -6px 1px hsl(calc(var(--hue) + 12), 100%, 60%),
-    2px -5px 1px hsl(calc(var(--hue) + 24), 100%, 60%),
-    3px -5px 1px hsl(calc(var(--hue) + 36), 100%, 60%),
-    4px -4px 1px hsl(calc(var(--hue) + 48), 100%, 60%),
-    5px -3px 1px hsl(calc(var(--hue) + 60), 100%, 60%),
-    5px -2px 1px hsl(calc(var(--hue) + 72), 100%, 60%),
-    6px -1px 1px hsl(calc(var(--hue) + 84), 100%, 60%),
-    6px 0px 1px hsl(calc(var(--hue) + 96), 100%, 60%),
-    6px 1px 1px hsl(calc(var(--hue) + 108), 100%, 60%),
-    5px 2px 1px hsl(calc(var(--hue) + 120), 100%, 60%),
-    5px 3px 1px hsl(calc(var(--hue) + 132), 100%, 60%),
-    4px 4px 1px hsl(calc(var(--hue) + 144), 100%, 60%),
-    3px 5px 1px hsl(calc(var(--hue) + 156), 100%, 60%),
-    2px 5px 1px hsl(calc(var(--hue) + 168), 100%, 60%),
-    1px 6px 1px hsl(calc(var(--hue) + 180), 100%, 60%),
-    0 6px 1px hsl(calc(var(--hue) + 192), 100%, 60%),
-    -1px 6px 1px hsl(calc(var(--hue) + 204), 100%, 60%),
-    -2px 5px 1px hsl(calc(var(--hue) + 216), 100%, 60%),
-    -3px 5px 1px hsl(calc(var(--hue) + 228), 100%, 60%),
-    -4px 4px 1px hsl(calc(var(--hue) + 240), 100%, 60%),
-    -5px 3px 1px hsl(calc(var(--hue) + 252), 100%, 60%),
-    -5px 2px 1px hsl(calc(var(--hue) + 264), 100%, 60%),
-    -6px 1px 1px hsl(calc(var(--hue) + 276), 100%, 60%),
-    -6px 0px 1px hsl(calc(var(--hue) + 288), 100%, 60%),
-    -6px -1px 1px hsl(calc(var(--hue) + 300), 100%, 60%),
-    -5px -2px 1px hsl(calc(var(--hue) + 312), 100%, 60%),
-    -5px -3px 1px hsl(calc(var(--hue) + 324), 100%, 60%),
-    -4px -4px 1px hsl(calc(var(--hue) + 336), 100%, 60%),
-    -3px -5px 1px hsl(calc(var(--hue) + 348), 100%, 60%),
-    -2px -5px 1px hsl(calc(var(--hue) + 360), 100%, 60%),
-    -1px -6px 1px hsl(calc(var(--hue) + 12), 100%, 60%);
+  animation: chromatic-rotate 6s linear infinite;
 }
 
 .content {
